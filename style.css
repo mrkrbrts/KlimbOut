@@ -83,6 +83,12 @@ select {
 body {
     font-family: 'Archivo', sans-serif;
     max-width: 1200px;
+    margin: auto;
+    padding: 2px 5px;
+}
+
+header {
+  border: black 1px solid;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -91,3 +97,55 @@ h1,h2,h3,h4,h5,h6 {
     font-variant: small-caps;
 }
 
+h1 {
+  text-align: center;
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 150px;
+}
+
+.purple {
+  font-weight: bold;
+  color: #800080;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+#header-img {
+  max-width: 500px;
+
+}
+
+/* .display-none {
+  display: none;
+} */
+
+.grid {
+  display: flex
+}
+
+.column {
+  padding: 5px;
+}
+
+#blurb {
+  color: #5c585a;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+}
