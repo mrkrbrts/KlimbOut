@@ -82,13 +82,47 @@ select {
 
 body {
     font-family: 'Archivo', sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    padding: 2px 5px;
 }
 
-header {
-  border: black 1px solid;
+header,section {
+  padding: 2px 5px;
+  display: flex;
+}
+
+div.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px 0px;
+  display:flex;
+}
+
+.column50{
+  flex:50%;
+  margin: 0px 15px;
+}
+
+.column33{
+  flex:33%;
+  margin: 0px 15px;
+}
+
+.column66{
+  flex:66%;
+  margin: 0px 15px;
+}
+
+.center{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/* header {
+  /* border: black 1px solid; */
+/* } */ 
+
+section.grey {
+  background-color: #f7f7f7;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -109,10 +143,9 @@ h2 {
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   min-width: 150px;
+  border-radius: 5px;
+  height:auto;
 }
 
 .purple {
@@ -121,9 +154,13 @@ img {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 7px;
   font-size: 18px;
+}
+
+li{
+  font-size:18px;
 }
 
 #header-img {
@@ -148,4 +185,17 @@ p {
   font-weight: bold;
   font-size: 20px;
   padding: 20px;
+}
+
+.organisation-item{
+  width: 400px;
+  height: 200px;
+  padding: 10px 15px;
+  margin: 0px 25px;
+  border: black 1px solid;
+}
+
+.organisations {
+  justify-content: space-between;
+  margin: 0px;
 }
