@@ -89,7 +89,7 @@ header,section {
   display: flex;
 }
 
-div.container{
+.container{
   max-width: 1200px;
   margin: auto;
   padding: 25px 0px;
@@ -198,4 +198,21 @@ li{
 .organisations {
   justify-content: space-between;
   margin: 0px;
+}
+
+footer{
+  text-align: center;
+  align-content: center;
+  font-size: 12px;
+  background-color: #5c585a;
+  color: whitesmoke;
+}
+
+#footer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer a{
+  color: whitesmoke
 }
