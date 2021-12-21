@@ -2,19 +2,20 @@
 <html>
     <head>
         <title>KlimbOut CIC</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styletwo.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header class="grid">
-            <div class="container">
+            <div class="container flex">
                 <div class="column">
-                    <img src="klimbout logo cropped.png" alt="KlimbOut Logo" id="header-img">
+                    <img src="klimbout logo cropped.png" alt="KlimbOut Logo" id="header-img" class="center">
                 </div>
-                <div class="column center">
+                <div class="column center" id="tagline">
                     <p id="blurb">Delivering <span class="purple">Keys</span> to <span class="purple">career aspiration</span> and <span class="purple">success</span> to young, vulnerable and disadvantaged communities</p>
                 </div>
             </div>
@@ -22,11 +23,11 @@
         </header>
         
         <section class="grey" id="intro">
-            <div class="container">
-                <div class="column50">
+            <div class="container flex">
+                <div class="center vertical-center column33">
                     <img src="happy-team.png" alt="happy team smiling at you">
                 </div>
-                <div class="column50 ">
+                <div class="vertical-center column66">
                     <p><span class="purple">KlimbOut</span> is a Manchester-born Community Interest Company with the ambitious goal to transform children and vulnerable lives across the UK.</p>
                     <p>We aim to achieve this by raising our commnunity's aspirations, develop their personal career management skills, and linking organisations to their local future workforce.</p>
                 </div>
@@ -34,11 +35,11 @@
         </section>
 
         <section id="pitch">
-            <div class="container">
-                <div class="column33 center">
+            <div class="container flex">
+                <div class="vertical-center column33 center">
                     <img src="working-team.png" alt="team working around a table">
                 </div>
-                <div class="column66">
+                <div class="vertical-center column66">
                     <h2>What We Do</h2>
                     <p><span class="purple">KlimbOut</span> delivers innovative and engaging careers, employability and enterprise interventions to different groups and communities whilst offering impacting volunteering opportunities to organisations</p>
                     <h2>What We Offer</h2>
@@ -60,62 +61,61 @@
         </section>
 
         <section class="grey" id="we-work-with">
-            <div class="container">
-                <div>
-                    <h2>We Work With</h2>
-                    <div id="organisations">
-                        <div class="container organisations center">
-                            <div class="organisation-item">
-                                <h3>Primary Schools</h3>
-                                <p>End of Key Stage 1 & 2</p>
-                                <p>Year 2 & Year 6</p>
-                            </div>
-                            <div class="organisation-item">
-                                <h3>High Schools & Colleges</h3>
-                                <p>Secondary, Post 16 & alternative education</p>
-                            </div>
-                            <div class="organisation-item">
-                                <h3>Charities & Community Organisations</h3>
-                                <p>Grassroot organisations and other CIC's working with adults or young people</p>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="container organisations">
-                            <div class="organisation-item column50">
-                                <h3>Adult Services</h3>
-                                <p>Providing employability and enterprise services to vulnerable adults</p>
-                            </div>
-                            <div class="organisation-item column50">
-                                <h3>Corporate Organisations</h3>
-                                <p>With an existing, or future Corporate Social Responsibility Policy</p>
-                            </div>
-                        </div>
-                        
-                    </div>
+            <div class="container flex">
+                <div class="center column33">
+                    <img src="jigsaw.png" alt="jigsaw">
                 </div>
-            </div> 
+                <div class="column66">
+                    <h2>We Work With</h2>
+                    
+                    <div>
+                        <h3>Primary Schools</h3>
+                        <p>End of Key Stage 1 & 2</p>
+                        <p>Year 2 & Year 6</p>
+                    </div>
+                    <div>
+                        <h3>High Schools & Colleges</h3>
+                        <p>Includes Post-16 and alternative education</p>
+                    </div>
+                    <div>
+                        <h3>Charities & Community Organisations</h3>
+                        <p>Grassroot organisations and other CIC's working with adults or young people</p>
+                    </div>
+                    <div>
+                        <h3>Adult Services</h3>
+                        <p>Providing employability and enterprise services to vulnerable adults</p>
+                    </div>
+                    <div>
+                        <h3>Corporate Organisations</h3>
+                        <p>With an existing, or future Corporate Social Responsibility Policy</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section id="contact-us">
-            <div class="container">
-                <div class="column33">
+            <div class="container flex">
+                <div class="center vertical-center column33">
                     <img src="phone.png" alt="phone">
                 </div>
-                <div class="column66">
+                <div class="vertical-center column66">
+                    <h2>Contact Us</h2>
                     <p>Thanks for checking us out today.</p>
                     <p>Our website is currently under construction, but we encourage you to get in touch right away to discuss your needs.</p>
                     <p>We look forward to working with you.</p>
-                    <h2>Contact Us</h2>
                     <p>Email: <a href="mailto:admin@klimbout.com?subject=Contact Us - KlimbOut CIC">admin@klimbout.com</a></p>
                     <p>Call: 07772480797</p>
                 </div>
             </div>
         </section>
+
+        
         
         <footer>
-            <div class="container" id="footer">
+            <div class="container flex" id="footer">
                 <div class="left">
-                    <p class="footer">© Copyright 2022 KlimbOut. Website by <a href="https://mrkrbrts.github.io/" target="#">MrkRbrts</p>
+                    <p class="footer">© Copyright 2022 KlimbOut. Website by <a id="creator" href="https://mrkrbrts.github.io/" target="#">MrkRbrts</p>
                 </div>
                 <div class="right">
                     
@@ -126,3 +126,15 @@
 
     </body>
 </html>
+
+
+<!-- 
+// <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+
+
+
+
+
+-->

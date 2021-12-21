@@ -140,6 +140,11 @@ h1 {
 h2 {
   text-align: center;
   text-decoration: underline;
+  font-size: 32px;
+}
+
+h3 {
+  text-align: center;
 }
 
 img {
@@ -165,7 +170,6 @@ li{
 
 #header-img {
   max-width: 500px;
-
 }
 
 /* .display-none {
