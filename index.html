@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>KlimbOut CIC</title>
-        <link rel="stylesheet" href="styles/styletwo.css">
+        <title>KlimbOut</title>
+        <link rel="icon" type="image/x-icon" href="images/Klimbout favicon.png">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
-        <header class="grid">
-            <div class="container flex">
-                <div class="column">
-                    <img src="images/klimbout logo cropped.png" alt="KlimbOut Logo" id="header-img" class="center">
+
+        <header>
+            <div class="container">
+                <div class="header-titles">
+                    <img class="header-logo" src="images/klimbout logo cropped.png" alt="KlimbOut Logo">
                 </div>
-                <div class="column center" id="tagline">
-                    <p id="blurb">Delivering <span class="purple">Keys</span> to <span class="purple">career aspiration</span> and <span class="purple">success</span> to young, vulnerable and disadvantaged communities</p>
-                </div>
-            </div>
-            
+                <nav class="navigation hidden">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a class="navigation-link current-page" href="index.html">Home</a></li>
+                        <li class="navigation-list-item"><a class="navigation-link" href="services.html">Services</a></li>
+                        <li class="navigation-list-item"><a class="navigation-link" href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>            
         </header>
-        
-        <section class="grey" id="intro">
-            <div class="container flex">
-                <div class="center vertical-center column33">
-                    <img src="images/happy-team.png" alt="happy team smiling at you">
-                </div>
-                <div class="vertical-center column66">
-                    <p><span class="purple">KlimbOut</span> is a Manchester-born Community Interest Company with the ambitious goal to transform children and vulnerable lives across the UK.</p>
+
+        <main>
+
+            <section class="container">
+                <div class="section-content">
+                    <h1>KlimbOut</h1>
+                    <p class="subtitle">Delivering keys to <span class="accent">career aspirations and success</span> for young, vulnerable, and disadvantaged communities</p>
+                    <p><span class="accent">KlimbOut</span> is a Manchester-born Community Interest Company with the ambitious goal to transform children and vulnerable lives across the UK.</p>
                     <p>We aim to achieve this by raising our commnunity's aspirations, develop their personal career management skills, and linking organisations to their local future workforce.</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="pitch">
-            <div class="container flex">
-                <div class="vertical-center column33 center">
-                    <img src="images/working-team.png" alt="team working around a table">
+                <div class="section-decoration">
+                    <img class="main-image" src="images/happy-team.png" alt="happy team smiling at you">
                 </div>
-                <div class="vertical-center column66">
-                    <h2>What We Do</h2>
-                    <p><span class="purple">KlimbOut</span> delivers innovative and engaging careers, employability and enterprise interventions to different groups and communities whilst offering impacting volunteering opportunities to organisations</p>
+            </section>
+
+            <hr class="rounded">
+
+            <section class="container">
+                <div class="section-content">
                     <h2>What We Offer</h2>
-                    <p>
-                        <ul>
-                            <li>Face to face and online workshops and events</li>
-                            <li>Consultations on programme creation</li>
-                            <li>Programme delivery</li>
-                            <li>Staff training</li>
-                            <li>Volunteering and sponsorship opportunities</li>
-                        </ul>
-                    </p>
-                    <h2>How We Work</h2>
-                    <p>We pride ourself in working flexibly to accomodate the needs of our delivery partners.</p>
+                    <p><span class="accent">KlimbOut</span> delivers innovative and engaging careers, employability and enterprise interventions to different groups and communities. We also offer organisations impactful volunteering opportunities.</p>
+                    <ul>
+                        <li>Face to face or online workshops and events</li>
+                        <li>Consultations on programme creation</li>
+                        <li>Programme delivery</li>
+                        <li>Staff training</li>
+                        <li>Volunteering and sponsorship opportunities</li>
+                    </ul> 
+                    <p>We pride ourself in working flexibly to accomodate the needs of our participants and delivery partners.</p>
                     <p>We offer both online and face to face delivery - all of our programmes are adaptable to specific organisations, or funding requirements.</p>
+                    <p><a class="hidden" href="services.html">Read More</a></p>                   
                 </div>
-            </div>
 
-        </section>
-
-        <section class="grey" id="we-work-with">
-            <div class="container flex">
-                <div class="center column33">
-                    <img src="images/jigsaw.png" alt="jigsaw">
+                <div class="section-decoration">
+                    <img class="main-image" src="images/working-team.png" alt="team working around a table">
                 </div>
-                <div class="column66">
-                    <h2>We Work With</h2>
+            </section>
+
+            <hr class="rounded">
+
+            <section class="container">
+                <div class="section-content">
+                    <h2>Who We Work With</h2>
                     
                     <div>
                         <h3>Primary Schools</h3>
@@ -91,28 +94,40 @@
                     </div>
 
                 </div>
-            </div>
-        </section>
 
-        <section id="contact-us">
-            <div class="container flex">
-                <div class="center vertical-center column33">
-                    <img src="images/phone.png" alt="phone">
+                <div class="section-decoration">
+                    <img class="main-image" src="images/jigsaw.png" alt="jigsaw">
                 </div>
-                <div class="vertical-center column66">
+            </section>
+
+            <hr class="rounded">
+
+            <section class="container">
+                <div class="section-content">
                     <h2>Contact Us</h2>
-                    <p>Thanks for checking us out today.</p>
+                    <p>Thanks for checking us out today!</p>
                     <p>Our website is currently under construction, but we encourage you to get in touch right away to discuss your needs.</p>
                     <p>We look forward to working with you.</p>
-                    <p>Email: <a href="mailto:admin@klimbout.com?subject=Contact Us - KlimbOut CIC">admin@klimbout.com</a></p>
-                    <p>Call: 07772480797</p>
+                    <p><span class="accent">Email:</span> <a href="mailto:admin@klimbout.com?subject=Contact Us - KlimbOut CIC">admin@klimbout.com</a></p>
+                    <p><span class="accent">Call:</span> 07772480797</p>
                 </div>
-            </div>
-        </section>
 
-        
-        
-        <footer>
+                <div class="section-decoration">
+                    <img class="main-image" src="images/phone.png" alt="telephone">
+                </div>
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+        <!-- <footer>
             <div class="container flex" id="footer">
                 <div class="left">
                     <p class="footer">© Copyright 2022 KlimbOut. Website by <a id="creator" href="https://mrkrbrts.github.io/" target="#">MrkRbrts</p>
@@ -121,18 +136,16 @@
                     
                 </div>            
             </div>
-
-        </footer>
-
+        </footer> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </body>
 </html>
 
 
-<!-- Test comment -->
-<!-- Second test comment -->
+
 
 <!-- 
-// <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
 
 
 
