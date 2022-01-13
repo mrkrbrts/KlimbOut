@@ -1,222 +1,276 @@
-/*  ------------------------------------  */
-/* CSS Reset - Courtesy of Piccalilli https://piccalil.li/blog/a-modern-css-reset/ */
-/*  ------------------------------------  */
+/* =============
+1. Typography
+2. Structure & Layout
+3. Header & Navigation
+4. Links & Interactivity
+5. Media Queries
+============= */
 
+/* =============
+Typography
+============= */
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/*  ------------------------------------  */
-
-body {
-    font-family: 'Archivo', sans-serif;
-}
-
-header,section {
-  padding: 2px 5px;
-  display: flex;
-}
-
-.container{
-  max-width: 1200px;
-  margin: auto;
-  padding: 25px 0px;
-  display:flex;
-}
-
-.column50{
-  flex:50%;
-  margin: 0px 15px;
-}
-
-.column33{
-  flex:33%;
-  margin: 0px 15px;
-}
-
-.column66{
-  flex:66%;
-  margin: 0px 15px;
-}
-
-.center{
-  display: flex;
-  align-items:center;
-  justify-content: center;
-}
-
-/* header {
-  /* border: black 1px solid; */
-/* } */ 
-
-section.grey {
-  background-color: #f7f7f7;
+body{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #202124;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Archivo Black', sans-serif;
-    color: #800080;
-    font-variant: small-caps;
+  color: #800080;
+  font-variant: small-caps;
 }
 
 h1 {
+  font-size: 3.5rem;
+  margin-top:0;
   text-align: center;
-  font-size: 58px;
-  margin-bottom: 15px;
+  margin: 0 auto;
 }
 
 h2 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 32px;
+  font-size: 2.5rem;
 }
 
 h3 {
-  text-align: center;
-}
-
-img {
-  min-width: 150px;
-  border-radius: 5px;
-  height:auto;
-}
-
-.purple {
-  font-weight: bold;
-  color: #800080;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
 }
 
 p {
-  text-align: justify;
-  margin-bottom: 7px;
-  font-size: 18px;
+  font-size: 1.2rem;
+  margin: 1rem 0
+  
 }
 
-li{
-  font-size:18px;
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-left: 1em
 }
 
-#header-img {
-  max-width: 500px;
-}
-
-/* .display-none {
-  display: none;
-} */
-
-.grid {
-  display: flex
-}
-
-.column {
-  padding: 5px;
-}
-
-#blurb {
-  color: #5c585a;
+ul li::before {
+  content: "\2022";
+  color: #800080;
   font-weight: bold;
-  font-size: 20px;
-  padding: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-.organisation-item{
-  width: 400px;
-  height: 200px;
-  padding: 10px 15px;
-  margin: 0px 25px;
-  border: black 1px solid;
+.accent {
+  color: #800080;
+  font-weight: 600;
 }
 
-.organisations {
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.2em;
+  text-align: center;
+  color: #5c585a;
+}
+
+/* =============
+Structure & Layout
+============= */
+
+section {
+  padding: 1em 0
+}
+
+img {
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+hr.rounded {
+  border-top: 2px solid #800080;
+  border-radius: 5px;
+  width: 60%;
+  margin-bottom: 0;
+  display: none;
+}
+
+.main-image {
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 92.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+} 
+
+.columns {
+  display: flex;
   justify-content: space-between;
-  margin: 0px;
+}
+
+.section-content {
+  order: 1
+}
+
+.section-decoration {
+  order:-1;
+}
+
+
+/* =============
+Header, Footer & Navigation
+============= */
+
+header {
+  background-color: #f5f5f5;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-logo {
+  align-items: center;
 }
 
 footer{
   text-align: center;
   align-content: center;
-  font-size: 12px;
   background-color: #5c585a;
   color: whitesmoke;
 }
 
 #footer{
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
+  font-size: 16px;
 }
 
-footer a{
-  color: whitesmoke
+
+nav {
+  font-weight: bold;
+  color: #202124;
+  margin:0px;
+}
+
+nav ul {
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 0px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+nav li {
+  margin-bottom: 0.5em;
+}
+
+
+nav li::before {
+  /* Removes custom bullets */
+  content:"" 
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: #202124;
+  padding-bottom: 0.2em;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #800080;
+  border-bottom: 3px solid #800080;
+}
+
+.current-page {
+  border-bottom: 1px solid #202124;
+  text-transform: uppercase;
+}
+
+
+
+
+/* =============
+Links & Interactivity
+============= */
+
+a,
+a:visited {
+  color: #001957;
+}
+
+a:hover,
+a:focus {
+  color: #D4A12A;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =============
+Media Queries
+============= */
+
+@media (min-width: 769px) {
+  img {
+    max-height: 550px;
+  }
+
+  hr.rounded {
+    display:block;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-content {
+    width: 48%
+  }
+
+  .section-decoration {
+    width: 48%;
+    align-items: center;
+  }
+
+  .header-titles {
+    width: 48%;
+  }
+
+  .navigation {
+    width: 48%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: end;
+    text-align: end;
+  }
+
+  nav li {
+    padding-left: 1em;
+  }
+
+  nav li:first-child {
+    padding-left: 0
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .container {
+    width: 100%;
+  }
 }
