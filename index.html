@@ -108,8 +108,16 @@
                     <p>Thanks for checking us out today!</p>
                     <p>Our website is currently under construction, but we encourage you to get in touch right away to discuss your needs.</p>
                     <p>We look forward to working with you.</p>
-                    <p><span class="accent">Email:</span> <a href="mailto:admin@klimbout.com?subject=Contact Us - KlimbOut CIC">admin@klimbout.com</a></p>
-                    <p><span class="accent">Call:</span> 07772480797</p>
+
+                    <form action="https://formsubmit.co/admin@klimbout.com" method="POST">
+                        <input type="text" name="name" aria-label="Your name" placeholder="Your name" required>
+                        <br>
+                        <input type="email" name="email" aria-label="Your email address" placeholder="Your email address" required>
+                        <br>
+                        <textarea type="textarea" rows="4" cols="50" name="message" aria-label="Your message" placeholder="Your message..." required></textarea>
+                        <br>
+                        <button id="email-collector-button" class="form-button" type="submit">Send</button>
+                   </form>
                 </div>
 
                 <div class="section-decoration">
